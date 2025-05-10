@@ -1,15 +1,14 @@
-import { Text, View } from "react-native";
+import { styles } from "@/styles/auth.styles";
+import { useAuth } from "@clerk/clerk-expo";
+import { Text, TouchableOpacity, View } from "react-native";
 
 export default function Home() {
+  const { signOut } = useAuth();
   return (
-    <View
-      style={{
-        flex: 1,
-        justifyContent: "center",
-        alignItems: "center",
-      }}
-    >
-      <Text>Edit app/index.tsx to edit this screen.</Text>
+    <View style={styles.container}>
+      <TouchableOpacity onPress={() => signOut()}>
+        <Text style={{ color: "white" }}>signOut</Text>
+      </TouchableOpacity>
     </View>
   );
 }

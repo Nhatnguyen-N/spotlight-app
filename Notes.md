@@ -1,3 +1,7 @@
+Link video: https://www.youtube.com/watch?v=wbj-DuaL748
+
+
+
 1. TouchableOpacity
 Khi nào dùng?
 Khi bạn cần hiệu ứng nhấn đơn giản: Làm mờ (opacity) component khi chạm (mặc định opacity giảm xuống 0.2).

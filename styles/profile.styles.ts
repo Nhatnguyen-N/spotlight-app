@@ -212,10 +212,11 @@ export const styles = StyleSheet.create({
     textAlign: "center",
   },
   noPostsContainer: {
-    alignContent: "center",
+    alignItems: "center",
     justifyContent: "center",
     paddingVertical: 48,
     gap: 12,
+    flex: 1
   },
   noPostText: {
     color: COLORS.grey,
